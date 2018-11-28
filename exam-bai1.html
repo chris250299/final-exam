@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bài 1</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    var diemThi = [4, 7, 2, 8, 9, 10, 1,0];
+    function findMinScore(arr) {
+        var minScore = arr[0];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] < minScore) {
+                minScore = arr[i];
+            }
+        }
+        return minScore;
+    }
+
+    var a = findMinScore(diemThi);
+    document.write(a);
+</script>
+</body>
+</html>
