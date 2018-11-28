@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bài 2</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    var arrayNew = [];
+
+    function tryRemoveFromArray(arr, index) {
+        for (var i = 0; i < arr.length; i++) {
+            if (index != i) {
+                arrayNew.push(arr[i]);
+            }
+        }
+        if (arrayNew.length > 0)
+            document.write(arrayNew);
+        else {
+            document.write(arr);
+        }
+
+    }
+
+    var myArray = [4, 5, 7, 8, 3, 5];
+    var myIndex = parseInt(prompt("Nhập vào một số nguyên"));
+    tryRemoveFromArray(myArray, myIndex);
+</script>
+</body>
+</html>
